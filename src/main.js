@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import Blacklight from 'blacklight-vue'
-import BlacklightRoutes from 'blacklight-vue/src/routes'
+import Routes from './routes'
 import VueRouter from 'vue-router'
 import Home from './components/Home.vue'
 
@@ -11,9 +11,9 @@ Vue.use(Blacklight)
 Vue.use(VueRouter)
 
 // Push your own "Home" page into the routes.
-BlacklightRoutes.push({ path: '/', name: 'home', component: Home })
+Routes.push({ path: '/', name: 'home', component: Home })
 const router = new VueRouter({
-  routes: BlacklightRoutes
+  routes: Routes
 })
 
 // Add address to the API server
