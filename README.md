@@ -15,5 +15,5 @@ Make sure you have CHO running locally at `http://localhost:3000`.
 From the project directory:
 
     yarn install
-    yarn server
+    yarn serve
 
